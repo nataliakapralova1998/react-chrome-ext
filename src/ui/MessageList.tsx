@@ -1,4 +1,3 @@
-// src/ui/MessageList.tsx
 import React from 'react';
 import MessageCard, { Message } from './MessageCard';
 import EmptyState from './EmptyState';
@@ -10,7 +9,7 @@ interface MessageListProps {
 
 const MessageList: React.FC<MessageListProps> = ({ messages, markMessageAsRead }) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 min-h-80">
       {messages.length === 0 ? (
          <EmptyState />
       ) : (
