@@ -1,8 +1,5 @@
-// background.js
-
 // Mock function to simulate fetching messages from an API
 const fetchMessages = () => {
-  // Example response structure
   return {
     messages: [
       {
@@ -25,7 +22,7 @@ const fetchMessages = () => {
 
 const checkForNewMessages = () => {
   const { messages } = fetchMessages(); // Get messages from the mock API
-  
+
   console.log('Fetched messages:', messages); // Log fetched messages
 
   chrome.storage.local.get('messages', (result) => {
